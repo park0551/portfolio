@@ -50,8 +50,128 @@ table {
 /* ------------------------------------------------------
                         Custom Styles
 ----------------------------------------------------------*/
+html{
+	font-family: 'Roboto', sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Poppins', sans-serif;
+}
 
 /* Styling the Carousel */
 .sr-only{
 	display: none;
+}
+
+.carousel-item{
+	max-height: 400px;
+}
+/* Styling the Navigation */
+.navigation{
+	background-color: #46526A;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	width: 4rem;
+	padding: .7rem;
+}
+
+.socials ul{
+	display: flex;
+}
+
+.socials li a{
+	padding: .2rem;
+	text-decoration: none;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav ul a{
+	padding: .5rem;
+	text-decoration: none;
+	color: #B6F2E8;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav ul a:hover{
+	color: #FEC2C2;
+}
+
+/* Styling the Homepage Cards */
+.home-cards{
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	column-gap: 2rem;
+	text-align: center;
+	justify-content: center;
+	margin: 2rem auto;
+}
+
+.home-cards h2{
+	color: #F7FBFC;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 3px #000;
+}
+
+.home-cards a{
+	text-decoration: none;
+}
+
+.card-webcomic{
+	background-image: url(../images/webcomic-bgimg.png);
+	background-color: #6289CC;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 150px 40px;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.card-portfolio{
+	background-image: url(../images/portfolio-bgimg.png);
+	background-color: #6289CC;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 150px 40px;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.card-commissions{
+	background-image: url(../images/commissions-bgimg.png);
+	background-color: #6289CC;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 150px 40px;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.card-webcomic:hover{
+	transform: scale(1.01);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.card-portfolio:hover{
+	transform: scale(1.01);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.card-commissions:hover{
+	transform: scale(1.01);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
