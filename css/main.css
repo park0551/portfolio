@@ -86,15 +86,24 @@ h1, h2, h3, h4, h5{
 
 .socials ul{
 	display: flex;
+	padding-left: 0;
 }
 
 .socials li a{
-	padding: .2rem;
+	padding: 0 .2rem 0 .2rem;
 	text-decoration: none;
+	font-size: 1.2rem;
+	color: #FEC2C2;
+	transition: color .3s;
+}
+
+.socials li a:hover{
+	color: #B9CDF2;
 }
 
 nav ul{
 	display: flex;
+	padding-left: 0;
 }
 
 nav ul a{
@@ -115,7 +124,7 @@ nav ul a:hover{
 	column-gap: 2rem;
 	text-align: center;
 	justify-content: center;
-	margin: 2rem auto;
+	margin: 3.5rem auto 2rem auto;
 }
 
 .home-cards h2{
@@ -135,7 +144,6 @@ nav ul a:hover{
 	background-size: cover;
 	background-position: center;
 	padding: 150px 40px;
-	border-radius: 5px;
 	transition: 0.5s;
 }
 
@@ -146,7 +154,6 @@ nav ul a:hover{
 	background-size: cover;
 	background-position: center;
 	padding: 150px 40px;
-	border-radius: 5px;
 	transition: 0.5s;
 }
 
@@ -157,7 +164,6 @@ nav ul a:hover{
 	background-size: cover;
 	background-position: center;
 	padding: 150px 40px;
-	border-radius: 5px;
 	transition: 0.5s;
 }
 
@@ -174,4 +180,108 @@ nav ul a:hover{
 .card-commissions:hover{
 	transform: scale(1.01);
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Styling the About Me Section */
+.home-about-card{
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+	margin: 0 auto;
+	background-color: white;
+}
+
+.home-about{
+	background-color: #B9CDF2;
+	padding: 2rem;
+	margin: 4rem auto;
+}
+
+.card-title{
+	color: #6289CC;
+}
+
+.home-about-card .btn{
+	font-family: 'Poppins', sans-serif;
+	background-color: #6289CC;
+	border: none;
+}
+
+.home-about-card .btn:hover{
+	background-color: #FEC2C2;
+}
+
+/* Styling the Footer */
+.footer-parent{
+	background-color: #46526A;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	padding: 1rem 2rem 0 2rem;
+	align-items: center;
+}
+
+/* Footer - Socials */
+.footer-socials{
+	margin-top: .1rem;
+}
+.footer-socials ul{
+	display: flex;
+	padding-left: 0;
+	margin-bottom: .1rem;
+}
+
+
+.footer-socials ul li a{
+	padding: 0 .2rem 0 .2rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #FEC2C2;
+	transition: color .3s;
+}
+
+.footer-socials ul li a:hover{
+	color: #B9CDF2;
+}
+
+.footer-socials p{
+	font-family: 'Poppins', sans-serif;
+	color: #B9CDF2;
+	font-size: .8rem;
+	padding: 0;
+}
+
+/* Footer - Contact Me */
+.footer-child4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer-child4 i{
+	color: #FEC2C2;
+	padding-bottom: .5rem;
+}
+
+.footer-child4 a{
+	text-decoration: none;
+	color: #B9CDF2;
+	font-size: .8rem;
+}
+
+.footer-child4 a:hover{
+	color: #FEC2C2;
+}
+
+.footer-child4 .im-angle-right{
+	color: #FEC2C2;
+	font-size: .8rem;
+}
+
+/* Footer - Copyright */
+.footer-child3{
+	align-self: flex-end;
+	font-family: 'Poppins', sans-serif;
+	font-size: .7rem;
+	color: #B9CDF2;
 }
