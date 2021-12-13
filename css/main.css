@@ -70,6 +70,16 @@ h1, h2, h3, h4, h5{
 .carousel-item{
 	max-height: 400px;
 }
+
+.carousel-inner .carousel-caption{
+	text-align: left;
+	margin-bottom: 3rem;
+}
+
+.carousel-caption h1{
+	font-size: 3rem;
+}
+
 /* Styling the Navigation */
 .navigation{
 	background-color: #46526A;
@@ -120,11 +130,13 @@ nav ul a:hover{
 /* Styling the Homepage Cards */
 .home-cards{
 	display: grid;
-	grid-template-columns: 300px 300px 300px;
+	grid-template-columns: repeat(auto-fill, 300px);
 	column-gap: 2rem;
+	row-gap: 2rem;
 	text-align: center;
 	justify-content: center;
 	margin: 3.5rem auto 2rem auto;
+	max-width: 1080px;
 }
 
 .home-cards h2{
