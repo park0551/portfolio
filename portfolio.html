@@ -24,81 +24,92 @@
 
 <body>
     <header>
-        <header>
-            <div class="topbar">
-                <div class="socials">
-                    <ul>
-                        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
-                        <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
-                    </ul>
-                </div>
-                <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
-                
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <!-- Navigation -->
+        <div class="topbar">
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.instagram.com" aria-label="go to instagram"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" aria-label="go to twitter"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.patreon.com" aria-label="go to patreon"><i class="fab fa-patreon"></i></a>
+                    </li>
+                    <li><a href="https://www.twitch.tv" aria-label="go to twitch"><i class="fab fa-twitch"></i></a></li>
+                </ul>
             </div>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="webcomic.html">Webcomic</a></li>
-                        <li><a href="commissions.html">Commissions</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span><i class="fas fa-bars"></i></span>
-                </label>
-        </header>
+            <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
+
         </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="current">Portfolio</a></li>
+                <li><a href="webcomic.html">Webcomic</a></li>
+                <li><a href="commissions.html">Commissions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span><i class="fas fa-bars"></i></span>
+        </label>
     </header>
 
-    <div class="section">
-        <h2 class="h2">Portfolio</h2>
-        <div class="illust card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <img src="./images/illust-500_x_453.png" class="img-fluid rounded-start"
-                        alt="image of a digital painting">
-                </div>
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h3 class="card-title">Illustration</h3>
-                        <p class="card-text">Various illustrations including original artwork, fan art, and commissions.
-                        </p>
-                        <a href="illustration.html" class="btn btn-primary">Browse</a>
+    <main role="main">
+        <div class="section">
+            <h2 class="h2">Portfolio</h2>
+            <div class="illust card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="./images/illust-500_x_453.png" class="img-fluid rounded-start"
+                            alt="image of a digital painting">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h3 class="card-title">Illustration</h3>
+                            <p class="card-text">Various illustrations including original artwork, fan art, and
+                                commissions.
+                            </p>
+                            <a href="illustration.html" class="btn btn-primary">Browse</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="design card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
+            <div class="design card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
 
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h3 class="card-title">Design</h3>
-                        <p class="card-text">Various multimedia projects done during school and freelancing.</p>
-                        <a href="design.html" class="btn btn-primary">Browse</a>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h3 class="card-title">Design</h3>
+                            <p class="card-text">Various multimedia projects done during school and freelancing.</p>
+                            <a href="design.html" class="btn btn-primary">Browse</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./images/css-style-guide-500_x_453.png" class="img-fluid rounded-start"
+                            alt="image of a digitally rendered CSS style guide">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="./images/css-style-guide-500_x_453.png" class="img-fluid rounded-start"
-                        alt="image of a digitally rendered CSS style guide">
-                </div>
+            </div>
+
+
+            <div class="about card mb-3" style="max-width: 350px;">
+                <h3>About my work</h3>
+                <p>I started out as a scribbler, then an illustrator, and now a designer. I love a good mix of rough,
+                    hand-drawn elements and crisp, computer-generated shapes. Not too cookie-cutter, but not too
+                    chaotic!
+                </p>
+                <p>At first I wasn't sure if I would enjoy things like vectors, clean-cut shapes, and coding - but I
+                    realized quickly that I really enjoyed discovering the crossover between illustration and design.
+                    It's
+                    awesome to see certain things come together.</p>
+                <p>(Making this website just so happened to combine these two art disciplines very well!)</p>
             </div>
         </div>
-
-        <div class="about card mb-3" style="max-width: 350px;">
-            <h3>About my work</h3>
-            <p>I started out as a scribbler, then an illustrator, and now a designer. I love a good mix of rough, hand-drawn elements and crisp, computer-generated shapes. Not too cookie-cutter, but not too chaotic!</p> 
-            <p>At first I wasn't sure if I would enjoy things like vectors, clean-cut shapes, and coding - but I
-                realized quickly that I really enjoyed discovering the crossover between illustration and design. It's awesome to see certain things come together.</p>
-            <p>(Making this website just so happened to combine these two art disciplines very well!)</p>
-        </div>
-    </div>
+    </main>
 
     <footer>
         <div class="footer-parent">
@@ -107,10 +118,10 @@
             </div>
             <div class="footer-socials">
                 <ul>
-                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
+                    <li><a href="https://www.instagram.com" aria-label="go to instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" aria-label="go to twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.patreon.com" aria-label="go to patreon"><i class="fab fa-patreon"></i></a></li>
+                    <li><a href="https://www.twitch.tv" aria-label="go to twitch"><i class="fab fa-twitch"></i></a></li>
                 </ul>
                 <p>Chat with me!</p>
             </div>

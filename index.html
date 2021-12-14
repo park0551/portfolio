@@ -24,37 +24,39 @@
 
 <body>
     <header>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <!-- Navigation -->
         <div class="topbar">
             <div class="socials">
                 <ul>
-                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
+                    <li><a href="https://www.instagram.com" aria-label="go to instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" aria-label="go to twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.patreon.com" aria-label="go to patreon"><i class="fab fa-patreon"></i></a></li>
+                    <li><a href="https://www.twitch.tv" aria-label="go to twitch"><i class="fab fa-twitch"></i></a></li>
                 </ul>
             </div>
-            <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
+            <a href="index.html" aria-label="go to home page"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
 
         </div>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="open the menu">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="webcomic.html">Webcomic</a></li>
-                <li><a href="commissions.html">Commissions</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="current" aria-label="go to home page">Home</a></li>
+                <li><a href="portfolio.html" aria-label="go to portfolio page">Portfolio</a></li>
+                <li><a href="webcomic.html" aria-label="go to webcomic page">Webcomic</a></li>
+                <li><a href="commissions.html" aria-label="go to commissions page">Commissions</a></li>
+                <li><a href="about.html" aria-label="go to about page">About</a></li>
+                <li><a href="contact.html" aria-label="go to contact page">Contact</a></li>
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
-            <span><i class="fas fa-bars"></i></span>
+            <span><i class="fas fa-bars" aria-hidden="true"></i></span>
         </label>
     </header>
 
     <!-- Bootstrap Carousel -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -92,7 +94,7 @@
     </div>
 
     <!-- Main page content -->
-    <main>
+    <main role="main">
         <section class="home-cards">
             <a href="webcomic.html">
                 <div class="card-webcomic">
@@ -126,32 +128,33 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <footer>
-            <div class="footer-parent">
-                <div class="footer-child1">
-                    <img src="../images/j-logo-smaller.svg" class="logo" alt="j logo">
-                </div>
-                <div class="footer-socials">
-                    <ul>
-                        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
-                        <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
-                    </ul>
-                    <p>Chat with me!</p>
-                </div>
-                <div class="footer-child3">
-                    <p>&copy;.jaepeg 2021. All art displayed on this site is my own IP. Do not redistribute.</p>
-                </div>
-                <div class="footer-child4">
-                    <i class="im im-mail"></i>
-                    <a href="contact.html">
-                        <p>Contact me <i class="im im-angle-right"></i></p>
-                    </a>
-                </div>
+    <footer>
+        <div class="footer-parent">
+            <div class="footer-child1">
+                <img src="../images/j-logo-smaller.svg" class="logo" alt="j logo">
             </div>
-        </main>
+            <div class="footer-socials">
+                <ul>
+                    <li><a href="https://www.instagram.com" aria-label="go to instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" aria-label="go to twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.patreon.com" aria-label="go to patreon"><i class="fab fa-patreon"></i></a></li>
+                    <li><a href="https://www.twitch.tv" aria-label="go to twitch"><i class="fab fa-twitch"></i></a></li>
+                </ul>
+                <p>Chat with me!</p>
+            </div>
+            <div class="footer-child3">
+                <p>&copy;.jaepeg 2021. All art displayed on this site is my own IP. Do not redistribute.</p>
+            </div>
+            <div class="footer-child4">
+                <i class="im im-mail"></i>
+                <a href="contact.html" aria-label="go to contact page">
+                    <p>Contact me <i class="im im-angle-right"></i></p>
+                </a>
+            </div>
+        </div>
+
     </footer>
 
     <!-- Bootstrap JS-->

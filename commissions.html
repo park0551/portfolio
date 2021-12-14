@@ -22,13 +22,15 @@
 
 <body>
     <header>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <!-- Navigation -->
         <div class="topbar">
             <div class="socials">
                 <ul>
-                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
+                    <li><a href="https://www.instagram.com" aria-label="go to instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" aria-label="go to twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.patreon.com" aria-label="go to patreon"><i class="fab fa-patreon"></i></a></li>
+                    <li><a href="https://www.twitch.tv" aria-label="go to twitch"><i class="fab fa-twitch"></i></a></li>
                 </ul>
             </div>
             <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
@@ -40,7 +42,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="webcomic.html">Webcomic</a></li>
-                    <li><a href="commissions.html">Commissions</a></li>
+                    <li><a href="commissions.html" class="current">Commissions</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -52,7 +54,7 @@
     
     
     
-    <div class="main">
+    <div class="main" role="main">
         <h2>Commissions</h2>
         <div class="article">
             <div class="faq col-md-6">
@@ -93,11 +95,11 @@
         </div>
         <div class="mb-3">
             <label for="url" class="url">Link to Images (Google Drive, etc.)</label>
-            <input id="url" type="url" class="form-control" value="https://">
+            <input id="url" type="url" class="form-control" placeholder="https://">
         </div>
         <div class="mb-3">
             <label for="message" class="form-label">Your Request</label>
-            <textarea id="message" class="form-control" type="textarea" placeholder="Be thorough and concise!" required></textarea>
+            <textarea id="message" class="form-control" placeholder="Be thorough and concise!" required></textarea>
         </div>
         <div class="mb-3">
             <label for="policies" class="form-label">I have read the policies and I fully understand them.</label>
@@ -113,10 +115,10 @@
             </div>
             <div class="footer-socials">
                 <ul>
-                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
+                    <li><a href="https://www.instagram.com" aria-label="go to instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" aria-label="go to twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.patreon.com" aria-label="go to patreon"><i class="fab fa-patreon"></i></a></li>
+                    <li><a href="https://www.twitch.tv" aria-label="go to twitch"><i class="fab fa-twitch"></i></a></li>
                 </ul>
                 <p>Chat with me!</p>
             </div>

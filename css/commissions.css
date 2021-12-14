@@ -66,6 +66,16 @@ h1, h2, h3, h4, h5{
 	font-family: 'Poppins', sans-serif;
 }
 
+/* Styling the Skip-Link */
+.skip-link{
+	background-color: #F7FBFC;
+	font-weight: 700;
+	position: absolute;
+	left: 0;
+	transform: translateY(-500%);
+	transition: transform .3s;
+}
+
 /* Styling the Navigation */
 .topbar{
 	display: flex;
@@ -128,6 +138,12 @@ nav ul a{
 }
 
 nav ul a:hover{
+	color: #FEC2C2;
+}
+
+nav .current{
+	background-color: #6289CC;
+	border-radius: 30px;
 	color: #FEC2C2;
 }
 
@@ -196,7 +212,7 @@ nav ul a:hover{
     font-family: 'Poppins', sans-serif;
     border: none;
     border-radius: 30px;
-    padding: 1rem auto 1rem auto;
+    padding: 1rem 0 1rem 0;
 }
 
 .faq .btn{

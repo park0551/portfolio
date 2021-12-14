@@ -23,98 +23,103 @@
 
 <body>
     <header>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <!-- Navigation -->
         <div class="topbar">
             <div class="socials">
                 <ul>
-                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
+                    <li><a href="https://www.instagram.com" aria-label="go to instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" aria-label="go to twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.patreon.com" aria-label="go to patreon"><i class="fab fa-patreon"></i></a></li>
+                    <li><a href="https://www.twitch.tv" aria-label="go to twitch"><i class="fab fa-twitch"></i></a></li>
                 </ul>
             </div>
             <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
-            
+
         </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="webcomic.html">Webcomic</a></li>
-                    <li><a href="commissions.html">Commissions</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span><i class="fas fa-bars"></i></span>
-            </label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="webcomic.html" class="current">Webcomic</a></li>
+                <li><a href="commissions.html">Commissions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span><i class="fas fa-bars"></i></span>
+        </label>
     </header>
 
-    <div class="main">
-        
-        <!-- Styling the Webcomic Banner -->
-        <div class="banner card bg-dark text-white">
-            <picture>
-                <source srcset="../images/webcomic-banner/webcomic-banner-2160_x_500.png"
+    <main role="main">
+        <div class="main" role="banner">
+
+            <!-- Styling the Webcomic Banner -->
+            <div class="banner card bg-dark text-white">
+                <picture>
+                    <source srcset="../images/webcomic-banner/webcomic-banner-2160_x_500.png"
                         media="(min-width: 768px)" />
-            
-                <source srcset="./images/webcomic-banner/webcomic-banner-540_x_300.png"
+
+                    <source srcset="./images/webcomic-banner/webcomic-banner-540_x_300.png"
                         media="(min-width: 480px)" />
-            
-                <source srcset="../images/webcomic-banner/webcomic-banner-540_x_300.png"
+
+                    <source srcset="../images/webcomic-banner/webcomic-banner-540_x_300.png"
                         media="(min-width: 320px)" />
-            
-                <img class="card-img"
-                     src="../images/webcomic-banner/webcomic-banner-540_x_300.png"
-                     alt="webcomic banner art">
-            </picture>
-            <!-- <img src="../images/webcomic-banner/webcomic-banner-540_x_300.png" class="card-img" alt="knight and dragon webcomic banner art"> -->
-            <div class="inner card-img-overlay">
-                <h2 class="card-title1">Webcomic</h2>
-                <h5 class="card-title1">Knight & Dragon</h5>
-                <a href="https://www.webtoons.com/en/challenge/knight-dragon/list?title_no=508826"
-                    class="btn btn-primary">Read it on Webtoon<i class="im im-angle-right"></i></a>
-            </div>
-        </div>
-    </div>
 
-    <!-- Styling the About Section -->
-    <div class="design card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-
-            <div class="col-md-6">
-                <div class="card-body">
-                    <h3 class="card-title">About the comic</h3>
-                    <p class="card-text"><b>Knight & Dragon</b> is a vertical-format webcomic (also known as a webtoon) hosted
-                        on Webtoon. The story started as just a sketch of the two main characters, and evolved into a
-                        huge project that's now being shared online!</p>
+                    <img class="card-img" src="../images/webcomic-banner/webcomic-banner-540_x_300.png"
+                        alt="webcomic banner art">
+                </picture>
+                <!-- <img src="../images/webcomic-banner/webcomic-banner-540_x_300.png" class="card-img" alt="knight and dragon webcomic banner art"> -->
+                <div class="inner card-img-overlay">
+                    <h2 class="card-title1">Webcomic</h2>
+                    <h5 class="card-title1">Knight & Dragon</h5>
+                    <a href="https://www.webtoons.com/en/challenge/knight-dragon/list?title_no=508826"
+                        aria-label="read knight and dragon on webtoons.com" class="btn btn-primary">Read it on Webtoon<i class="im im-angle-right"></i></a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="./images/webcomic-bgimg-416_x_416.png" class="img-fluid rounded-start"
-                    alt="knight and dragon webtoon thumbnail">
-            </div>
         </div>
-    </div>
 
-    <!-- Styling the Cards  -->
-    <div class="card-group">
-        <div class="card card2">
-            <img src="./images/twitter-cover-450_x_600.png" class="card-img" alt="...">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Ramblings & More Art on</h5>
-                <a href="https://www.twitter.com/">Twitter<i class="im im-angle-right"></i></a>
+        <!-- Styling the About Section -->
+        <div class="design card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h3 class="card-title">About the comic</h3>
+                        <p class="card-text"><b>Knight & Dragon</b> is a vertical-format webcomic (also known as a
+                            webtoon) hosted
+                            on Webtoon. The story started as just a sketch of the two main characters, and evolved into
+                            a
+                            huge project that's now being shared online!</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/webcomic-bgimg-416_x_416.png" class="img-fluid rounded-start"
+                        alt="knight and dragon webtoon thumbnail">
+                </div>
             </div>
         </div>
-        <div class="card card2">
-            <img src="./images/patreon-cover-450_x_600.png" class="card-img" alt="...">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Exclusive Content on</h5>
-                <a href="https://www.patreon.com/">Patreon<i class="im im-angle-right"></i></a>
+
+        <!-- Styling the Cards  -->
+        <div class="card-group">
+            <div class="card card2">
+                <img src="./images/twitter-cover-450_x_600.png" class="card-img" alt="image of digital art that links to twitter">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Ramblings & More Art on</h5>
+                    <a href="https://www.twitter.com/">Twitter<i class="im im-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="card card2">
+                <img src="./images/patreon-cover-450_x_600.png" class="card-img" alt="image of digital art that links to patreon">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Exclusive Content on</h5>
+                    <a href="https://www.patreon.com/">Patreon<i class="im im-angle-right"></i></a>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Styling the Footer -->
     <footer>
@@ -124,10 +129,10 @@
             </div>
             <div class="footer-socials">
                 <ul>
-                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
+                    <li><a href="https://www.instagram.com" aria-label="go to instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" aria-label="go to twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.patreon.com" aria-label="go to patreon"><i class="fab fa-patreon"></i></a></li>
+                    <li><a href="https://www.twitch.tv" aria-label="go to twitch"><i class="fab fa-twitch"></i></a></li>
                 </ul>
                 <p>Chat with me!</p>
             </div>
