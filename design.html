@@ -23,8 +23,7 @@
 
 <body>
     <header>
-        <div class="navigation">
-            <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
+        <div class="topbar">
             <div class="socials">
                 <ul>
                     <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
@@ -33,7 +32,10 @@
                     <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
                 </ul>
             </div>
-
+            <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
+            
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -44,6 +46,9 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span><i class="fas fa-bars"></i></span>
+            </label>
     </header>
     <main>
 
@@ -53,7 +58,7 @@
                     <h1 class="fw-light">Design</h1>
                     <p class="lead text-muted">A collection of designs that I've done during school, from UX Design to Web Design, and everything in between. And if you're looking for my illustration work, click that button below.</p>
                     <p>
-                        <a href="design.html" class="btn btn-primary my-2">Illustration Work</a>
+                        <a href="illustration.html" class="btn btn-primary my-2">Illustration Work</a>
                     </p>
                 </div>
             </div>

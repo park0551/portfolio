@@ -22,9 +22,7 @@
 
 <body>
     <header>
-        
-        <div class="navigation">
-            <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
+        <div class="topbar">
             <div class="socials">
                 <ul>
                     <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
@@ -33,7 +31,10 @@
                     <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
                 </ul>
             </div>
-
+            <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
+            
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -44,7 +45,9 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </div>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span><i class="fas fa-bars"></i></span>
+            </label>
     </header>
     
     
@@ -52,8 +55,7 @@
     <div class="main">
         <h2>Commissions</h2>
         <div class="article">
-            <img src="./images/commissions-250_x_600.png" alt="digital painting of fantasy character and blue peonies">
-            <div class="faq col-md-3">
+            <div class="faq col-md-6">
                 <h3>FAQ</h3>
                 <p>Q: What kind of commissions are you currently taking?</p>
                 <p>A: I usually have this information on my Twitter and Ko-Fi.</p>
@@ -63,7 +65,7 @@
                 <p>A: Absolutely! I just ask that you credit me in your bio so others can find me!</p>
                      <a href="https://ko-fi.com/jaepeg" class="btn btn-primary">Examples<i class="im im-angle-right"></i></a>
             </div>
-            <div class="policies col-md-3">
+            <div class="policies col-md-6">
                 <h3>Policies</h3>
                 <p>> Commissions are not taken on a first-come-first-serve basis.</p>
                 <p>> I reserve the right to deny a request if I feel uncomfortable doing it, or if I feel I cannot execute it properly. I'm happy to refer you to an artist who can accomplish your vision, though.</p>
@@ -104,7 +106,31 @@
         <button type="submit" class="btn btn-primary">Send Request</button>
     </form>
 
-
+    <footer>
+        <div class="footer-parent">
+            <div class="footer-child1">
+                <img src="../images/j-logo-smaller.svg" class="logo" alt="j logo">
+            </div>
+            <div class="footer-socials">
+                <ul>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
+                    <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
+                </ul>
+                <p>Chat with me!</p>
+            </div>
+            <div class="footer-child3">
+                <p>&copy;.jaepeg 2021. All art displayed on this site is my own IP. Do not redistribute.</p>
+            </div>
+            <div class="footer-child4">
+                <i class="im im-mail"></i>
+                <a href="contact.html">
+                    <p>Contact me <i class="im im-angle-right"></i></p>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

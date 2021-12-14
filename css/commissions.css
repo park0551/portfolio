@@ -54,6 +54,10 @@ html{
 	font-family: 'Roboto', sans-serif;
 }
 
+p{
+	font-size: 14px;
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -63,22 +67,38 @@ h1, h2, h3, h4, h5{
 }
 
 /* Styling the Navigation */
-.navigation{
-	background-color: #46526A;
+.topbar{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 }
 
+header{
+	background-color: #46526A;
+	text-align: center;
+	width: 100%;
+}
+
 .logo{
-	width: 4rem;
-	padding: .7rem;
+	width: 2rem;
+	margin: .5rem;
+}
+
+nav{
+	display: none;
+	background-color: #46526A;
+	z-index: 999;
+	position: absolute;
+	text-align: right;
+	right: 0;
+	top: 1.5rem;
+	padding: 2rem;
 }
 
 .socials ul{
 	display: flex;
 	padding-left: 0;
+	margin: auto 2rem;
 }
 
 .socials li a{
@@ -95,6 +115,8 @@ h1, h2, h3, h4, h5{
 
 nav ul{
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-left: 0;
 }
 
@@ -109,17 +131,46 @@ nav ul a:hover{
 	color: #FEC2C2;
 }
 
+.nav-toggle{
+	display: none;
+}
+
+.nav-toggle-label{
+	z-index: 99999;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-right: 1rem;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.nav-toggle-label .fas{
+	font-size: 2rem;
+	color: #B6F2E8;
+}
+
+.nav-toggle:checked ~ nav{
+	display: block;
+}
+
 /* Styling the Header */
+.main{
+	max-width: 100%;
+}
 .main h2{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 2rem auto;
     color: #6289cc;
+	word-wrap: break-word;
 }
 
 /* Styling the Article */
 .article{
     display: flex;
+	flex-direction: column;
     background-color: #B9CDF2;
     margin: 0 auto;
     justify-content: center;
@@ -130,7 +181,8 @@ nav ul a:hover{
     background-color: #f7fbfc;
     padding: 1rem;
     box-shadow: 2px 2px 5px #000;
-    margin: 0 1rem 0 0;
+    margin: 0 auto;
+	width: 100%;
 }
 
 .faq h3{
@@ -147,11 +199,20 @@ nav ul a:hover{
     padding: 1rem auto 1rem auto;
 }
 
+.faq .btn{
+	padding: .5rem 2rem;
+}
+
+.faq .btn i{
+	font-size: 1rem;
+	vertical-align: middle;
+}
+
 .policies{
     background-color: #f7fbfc;
     padding: 1rem;
     box-shadow: 2px 2px 5px #000;
-    margin: 0 1rem 0 1rem;
+    margin: 0 auto;
 }
 
 .policies h3{
@@ -163,6 +224,7 @@ nav ul a:hover{
 form{
     max-width: 800px;
     margin: 4rem auto;
+	padding: 0 1rem;
 }
 
 form h3{
@@ -181,4 +243,143 @@ form .btn{
     font-family: 'Poppins', sans-serif;
     border: none;
     border-radius: 30px;
+}
+
+/* Styling the Footer */
+.footer-parent{
+	background-color: #46526A;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	padding: 1rem 2rem 0 2rem;
+	align-items: center;
+}
+
+/* Footer - Socials */
+.footer-socials{
+	margin-top: .1rem;
+}
+.footer-socials ul{
+	display: flex;
+	padding-left: 0;
+	margin-bottom: .1rem;
+}
+
+
+.footer-socials ul li a{
+	padding: 0 .2rem 0 .2rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #FEC2C2;
+	transition: color .3s;
+}
+
+.footer-socials ul li a:hover{
+	color: #B9CDF2;
+}
+
+.footer-socials p{
+	font-family: 'Poppins', sans-serif;
+	color: #B9CDF2;
+	font-size: .8rem;
+	padding: 0;
+}
+
+.footer-child1{
+	display: none;
+}
+
+/* Footer - Contact Me */
+.footer-child4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer-child4 i{
+	color: #FEC2C2;
+	padding-bottom: .5rem;
+}
+
+.footer-child4 a{
+	text-decoration: none;
+	color: #B9CDF2;
+	font-size: .8rem;
+}
+
+.footer-child4 a:hover{
+	color: #FEC2C2;
+}
+
+.footer-child4 .im-angle-right{
+	color: #FEC2C2;
+	font-size: .8rem;
+}
+
+/* Footer - Copyright */
+.footer-child3{
+	align-self: flex-end;
+	font-family: 'Poppins', sans-serif;
+	font-size: .7rem;
+	color: #B9CDF2;
+	text-align: center;
+}
+
+
+
+
+/* ----------------------------------------------------------
+					Media Queries - Desktop										
+------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+	.topbar{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	nav{
+		display: block;
+		width: 100%;
+		position: inherit;
+		margin: 0 auto;
+	}
+
+	nav ul{
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		justify-content: center;
+	}
+
+	.nav-toggle{
+		display: none;
+	}
+
+	.nav-toggle-label{
+		display: none;
+	}
+
+	header{
+		background-color: #46526A;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.article{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.faq{
+		margin-right: 1rem;
+	}
+
+	.main h2{
+		font-size: 3rem;
+	}
 }

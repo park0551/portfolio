@@ -24,8 +24,7 @@
 
 <body>
     <header>
-        <div class="navigation">
-            <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
+        <div class="topbar">
             <div class="socials">
                 <ul>
                     <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
@@ -34,48 +33,53 @@
                     <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
                 </ul>
             </div>
-    
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="webcomic.html">Webcomic</a></li>
-                    <li><a href="commissions.html">Commissions</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
+
         </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="webcomic.html">Webcomic</a></li>
+                <li><a href="commissions.html">Commissions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span><i class="fas fa-bars"></i></span>
+        </label>
     </header>
-    
+
     <!-- Bootstrap Carousel -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            
+
             <div class="carousel-item active">
                 <img class="d-block w-100" src="../images/carousel1.png" alt="First slide">
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
                 <h1>.jaepeg</h1>
-              </div>
+            </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="../images/carousel2.png" alt="Second slide">
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
                 <h1>.jaepeg</h1>
-              </div>
+            </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="../images/carousel3.png" alt="Third slide">
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
                 <h1>.jaepeg</h1>
-              </div>
+            </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -88,62 +92,66 @@
     </div>
 
     <!-- Main page content -->
-    <section class="home-cards">
-        <a href="webcomic.html">
-            <div class="card-webcomic">
-                <h2>Webcomic</h2>
-            </div>
-        </a>
-        <a href="portflio.html">
-            <div class="card-portfolio">
-                <h2>Portfolio</h2>
-            </div>
-        </a>
-        <a href="commissions.html">
-            <div class="card-commissions">
-                <h2>Commissions</h2>
-            </div>
-        </a>
-    </section>
+    <main>
+        <section class="home-cards">
+            <a href="webcomic.html">
+                <div class="card-webcomic">
+                    <h2>Webcomic</h2>
+                </div>
+            </a>
+            <a href="portflio.html">
+                <div class="card-portfolio">
+                    <h2>Portfolio</h2>
+                </div>
+            </a>
+            <a href="commissions.html">
+                <div class="card-commissions">
+                    <h2>Commissions</h2>
+                </div>
+            </a>
+        </section>
 
-    <section class="home-about">
-        <div class="home-about-card" style="max-width: 30rem;">
-            <img src="../images/me-banner.png" class="card-img-top" alt="bright digital doodle of jaepeg">
-            <div class="card-body">
-                <h3 class="card-title">About Me</h3>
-                <p class="card-text">Thank you for stopping by! I'm Taylor (also known as Jae). I learned how to draw
-                    through tutorials on dA
-                    and YouTube, and eventually pursued a college education to add some more skills to my arsenal. Here
-                    you'll find some of my design work, personal artwork, and a little in between.</p>
-                <a href="about.html" class="btn btn-primary">Read More</a>
+        <section class="home-about">
+            <div class="home-about-card" style="max-width: 30rem;">
+                <img src="../images/me-banner.png" class="card-img-top" alt="bright digital doodle of jaepeg">
+                <div class="card-body">
+                    <h3 class="card-title">About Me</h3>
+                    <p class="card-text">Thank you for stopping by! I'm Taylor (also known as Jae). I learned how to
+                        draw
+                        through tutorials on dA
+                        and YouTube, and eventually pursued a college education to add some more skills to my arsenal.
+                        Here
+                        you'll find some of my design work, personal artwork, and a little in between.</p>
+                    <a href="about.html" class="btn btn-primary">Read More</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="footer-parent">
-            <div class="footer-child1">
-                <img src="../images/j-logo-smaller.svg" class="logo" alt="j logo">
+        <footer>
+            <div class="footer-parent">
+                <div class="footer-child1">
+                    <img src="../images/j-logo-smaller.svg" class="logo" alt="j logo">
+                </div>
+                <div class="footer-socials">
+                    <ul>
+                        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
+                        <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
+                    </ul>
+                    <p>Chat with me!</p>
+                </div>
+                <div class="footer-child3">
+                    <p>&copy;.jaepeg 2021. All art displayed on this site is my own IP. Do not redistribute.</p>
+                </div>
+                <div class="footer-child4">
+                    <i class="im im-mail"></i>
+                    <a href="contact.html">
+                        <p>Contact me <i class="im im-angle-right"></i></p>
+                    </a>
+                </div>
             </div>
-            <div class="footer-socials">
-                <ul>
-                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.patreon.com"><i class="fab fa-patreon"></i></a></li>
-                    <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
-                </ul>
-                <p>Chat with me!</p>
-            </div>
-            <div class="footer-child3">
-                <p>&copy;.jaepeg 2021. All art displayed on this site is my own IP. Do not redistribute.</p>
-            </div>
-            <div class="footer-child4">
-                <i class="im im-mail"></i>
-                <a href="contact.html">
-                    <p>Contact me <i class="im im-angle-right"></i></p>
-                </a>
-            </div>
-        </div>
+        </main>
     </footer>
 
     <!-- Bootstrap JS-->

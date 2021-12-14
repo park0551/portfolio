@@ -62,41 +62,43 @@ h1, h2, h3, h4, h5{
 	font-family: 'Poppins', sans-serif;
 }
 
-/* Styling the Carousel */
-.sr-only{
-	display: none;
-}
-
-.carousel-item{
-	max-height: 400px;
-}
-
-.carousel-inner .carousel-caption{
-	text-align: left;
-	margin-bottom: 3rem;
-}
-
-.carousel-caption h1{
-	font-size: 3rem;
+p{
+	font-size: 14px;
 }
 
 /* Styling the Navigation */
-.navigation{
-	background-color: #46526A;
+.topbar{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 }
 
+header{
+	background-color: #46526A;
+	text-align: center;
+	width: 100%;
+}
+
 .logo{
-	width: 4rem;
-	padding: .7rem;
+	width: 2rem;
+	margin: .5rem;
+}
+
+nav{
+	display: none;
+	background-color: #46526A;
+	z-index: 999;
+	position: absolute;
+	text-align: right;
+	right: 0;
+	top: 1.5rem;
+	padding: 2rem;
 }
 
 .socials ul{
 	display: flex;
 	padding-left: 0;
+	margin: auto 2rem;
 }
 
 .socials li a{
@@ -113,6 +115,8 @@ h1, h2, h3, h4, h5{
 
 nav ul{
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-left: 0;
 }
 
@@ -125,6 +129,51 @@ nav ul a{
 
 nav ul a:hover{
 	color: #FEC2C2;
+}
+
+.nav-toggle{
+	display: none;
+}
+
+.nav-toggle-label{
+	z-index: 99999;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-right: 1rem;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.nav-toggle-label .fas{
+	font-size: 2rem;
+	color: #B6F2E8;
+}
+
+.nav-toggle:checked ~ nav{
+	display: block;
+}
+
+/* Styling the Carousel */
+.sr-only{
+	display: none;
+}
+
+.carousel-item{
+	max-height: 400px;
+}
+
+.carousel-inner .carousel-caption{
+	text-align: center;
+	display: flex;
+	margin: auto;
+	align-items: center;
+}
+
+.carousel-caption h1{
+	font-size: 3rem;
+	margin: 0 auto;
 }
 
 /* Styling the Homepage Cards */
@@ -231,6 +280,10 @@ nav ul a:hover{
 	align-items: center;
 }
 
+.footer-child1{
+	display: none;
+}
+
 /* Footer - Socials */
 .footer-socials{
 	margin-top: .1rem;
@@ -296,4 +349,58 @@ nav ul a:hover{
 	font-family: 'Poppins', sans-serif;
 	font-size: .7rem;
 	color: #B9CDF2;
+	text-align: center;
+}
+
+
+
+/* ----------------------------------------------------------
+					Media Queries - Desktop										
+------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+	.topbar{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	nav{
+		display: block;
+		width: 100%;
+		position: inherit;
+		margin: 0 auto;
+	}
+
+	nav ul{
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		justify-content: center;
+	}
+
+	.nav-toggle{
+		display: none;
+	}
+
+	.nav-toggle-label{
+		display: none;
+	}
+
+	header{
+		background-color: #46526A;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.carousel-inner .carousel-caption{
+		text-align: left;
+		margin-bottom: 3rem;
+	}
+	
+	.carousel-caption h1{
+		font-size: 3rem;
+	}
+	
 }

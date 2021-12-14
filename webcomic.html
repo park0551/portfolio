@@ -23,8 +23,7 @@
 
 <body>
     <header>
-        <div class="navigation">
-            <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
+        <div class="topbar">
             <div class="socials">
                 <ul>
                     <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
@@ -33,7 +32,10 @@
                     <li><a href="https://www.twitch.tv"><i class="fab fa-twitch"></i></a></li>
                 </ul>
             </div>
-
+            <a href="index.html"><img class="logo" src="./images/j-logo-smaller.svg" alt="j logo"></a>
+            
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -44,15 +46,32 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </div>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span><i class="fas fa-bars"></i></span>
+            </label>
     </header>
 
     <div class="main">
-        <h2>Webcomic</h2>
+        
         <!-- Styling the Webcomic Banner -->
-        <div class="banner card bg-dark text-white col-10">
-            <img src="./images/webcomic-banner-1080_x_250.png" class="card-img" alt="...">
+        <div class="banner card bg-dark text-white">
+            <picture>
+                <source srcset="../images/webcomic-banner/webcomic-banner-2160_x_500.png"
+                        media="(min-width: 768px)" />
+            
+                <source srcset="./images/webcomic-banner/webcomic-banner-540_x_300.png"
+                        media="(min-width: 480px)" />
+            
+                <source srcset="../images/webcomic-banner/webcomic-banner-540_x_300.png"
+                        media="(min-width: 320px)" />
+            
+                <img class="card-img"
+                     src="../images/webcomic-banner/webcomic-banner-540_x_300.png"
+                     alt="webcomic banner art">
+            </picture>
+            <!-- <img src="../images/webcomic-banner/webcomic-banner-540_x_300.png" class="card-img" alt="knight and dragon webcomic banner art"> -->
             <div class="inner card-img-overlay">
+                <h2 class="card-title1">Webcomic</h2>
                 <h5 class="card-title1">Knight & Dragon</h5>
                 <a href="https://www.webtoons.com/en/challenge/knight-dragon/list?title_no=508826"
                     class="btn btn-primary">Read it on Webtoon<i class="im im-angle-right"></i></a>
