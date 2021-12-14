@@ -259,6 +259,10 @@ form .btn:hover{
 	align-items: center;
 }
 
+.footer-child1{
+	display: none;
+}
+
 /* Footer - Socials */
 .footer-socials{
 	margin-top: .1rem;
