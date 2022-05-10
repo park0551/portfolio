@@ -199,7 +199,8 @@ nav .current{
 /* Styling the Homepage Cards */
 .home-cards{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 300px);
+	grid-template-columns: 300px 300px;
+	/* grid-template-columns: repeat(auto-fill, 300px); */
 	column-gap: 2rem;
 	row-gap: 2rem;
 	text-align: center;
